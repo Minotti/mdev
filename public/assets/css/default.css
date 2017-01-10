@@ -1,0 +1,75 @@
+/*Padrões para o site*/
+.center{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+.clWhite{
+    color: #FFF;
+}
+.clBlack{
+    color: #000;
+}
+.clPadrao{
+    color: #014C65;
+}
+
+.link-top-left:after{
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    position: absolute;
+    content: "";
+    opacity: 0;
+    width: auto;
+    height: auto;
+    z-index: 3;
+    transition: all .4s;
+}
+
+.link-top-left:before{
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    left: 100%;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    opacity: 0;
+    width: auto;
+    height: auto;
+    z-index: 3;
+    transition: all .4s;
+}
+
+.link-top-left:hover:before{
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.link-top-left:hover:after{
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.borderLinkBlue:after{
+    border-top: 2px solid #014C65;
+    border-left: 2px solid #014C65;
+}
+
+.borderLinkBlue:before{
+    border-bottom: 2px solid #014C65;
+    border-right: 2px solid #014C65;
+}
+
+.link:hover{
+    color: #016e89;
+}

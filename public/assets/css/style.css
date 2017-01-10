@@ -1,0 +1,207 @@
+/*Inicio resets*/
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+ul{list-style: none;}
+
+.box{
+    width: 100%;
+}
+
+.container{
+    padding: 0 3%;
+}
+
+.clearfix:before, .clearfix:after{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*Fim Resets*/
+
+
+.header{
+    background: rgba(1,76,101, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*display: table;*/
+    z-index: 100;
+}
+
+.titulo{
+    font-family: gochi-hand, sans-serif;
+}
+
+.texto{
+    font-family: goudy-bookletter-1911, serif;
+}
+
+img, picture, video, embed{
+    max-width: 100%;
+}
+
+.logoTopo{
+    width: 22%;
+    float: left;
+    padding: 15px 0;
+}
+
+.menu{
+    width: 70%;
+    float: right;
+    margin-top: 48px;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu li {
+    font-size: 1.5em;
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a{
+    padding: 10px 15px;
+    position: relative;
+}
+
+.banner{
+    /*Tamanho ideal para largura: 2000*/
+    /*Tamanho ideal para altura: 1000*/
+    /*background: url('../Site/imgs/banners/banner5.jpg');*/
+    background-size: 100% !important;
+    height: 650px;
+    position: relative;
+}
+
+.box-banners{
+    height: 650px;
+    position: relative;
+}
+
+.swiper-container {
+    height: 650px;
+}
+
+.swiper-wrapper{
+    position:  fixed;
+}
+.nossos-clientes{
+    margin-top: 40px;
+    text-align: center;
+}
+.nossos-clientes h1{
+    font-size: 30px;
+}
+
+.clientes{
+    display: flex;
+    height: 260px;
+    padding: 35px 0;
+}
+.container-cliente{width: 20%;height: 210px;margin: 0 auto;}
+.logo-cliente{
+    height: 150px;
+    position: relative;
+}
+.logo-cliente img{
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.container-cliente a{padding: 10px 15px;color: #014C65;position: relative;top: 25px;}
+
+.nossos-servicos{
+    text-align: center;
+    background-color: #014C65;
+    margin-top: 40px;
+}
+
+.nossos-servicos h1{font-size: 30px;padding-top: 15px;}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 0;
+}
+.servico{
+    width: 32%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.servico:hover{background: rgba(255,255,255,0.1);}
+
+.servico a{text-align: left;display: block; color: #FFF;}
+.servico a:hover{color: #E1E1E1;}
+.servico img{float: left;margin: 35px 5px;max-width: 25%;}
+.servico-descricao{
+    margin-top: 10px;
+    max-width: 70%;
+    float: right;
+}
+.sobre-o-servico{
+    text-align: left;
+    font-size: 15px;
+    margin: 5px 5px 5px 0;
+}
+
+.a-mdev{
+    background: url("../Site/imgs/backgrounds/back.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: -120px;
+    height: 560px;
+    position: relative;
+}
+.a-mdev-descricao{
+    position: relative;
+    top: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.a-mdev-descricao h1{
+    font-size: 60px;
+}
+
+.a-mdev-descricao a{padding: 20px 35px;position: relative;font-size: 25px;display: inline-block;margin-top: 20px;}
+
+footer{
+    background: #014C65;
+    color: #FFF;
+}
+
+.footer{display: flex;padding-top: 20px; padding-bottom: 20px;}
+.footer a{color: #FFF;}
+.footer a:hover{color: #F1F1F1;}
+.footer h3{margin-bottom: 10px;}
+.mapa-do-site{width: 25%;}
+.footer-nossos-servicos{width: 30%;}
+.a-empresa{width: 30%;}
+.a-empresa img{max-width: 60%;}
+.sociais{margin-top: 10px;}
+.sociais a{color: rgba(255, 255, 255, 0.4);}
+.sociais a:hover{color: #FFF;transition: 0.4s all ease;}
+.footer-orcamento{margin-top: 50px;}
+.footer-orcamento a{position: relative;padding: 25px 30px;}
